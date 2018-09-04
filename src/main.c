@@ -12,6 +12,7 @@
 #include "stm32f4xx.h"
 #include "stm32f4_discovery.h"
 #include "a1.h"
+#include "task.h"
 
 #include "stm32f4xx_hal_rtc.h"
 
@@ -79,6 +80,8 @@ int main(void)
 
   /* Configure EXTI Line0 (connected to PA0 pin) in interrupt mode */
   EXTILine0_Config();
+
+  getIndexOfFirstAvailableSlot();
 
   /* Infinite loop */
   while (1)

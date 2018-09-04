@@ -25,6 +25,8 @@ struct task
 int numberOfSecondsToStartTaskNotAccurate(RTC_DateTypeDef *dateNow, RTC_TimeTypeDef *timeNow, struct task *ltask);
 
 
+unsigned int getIndexOfFirstAvailableSlot();
+
 /*
 
 
